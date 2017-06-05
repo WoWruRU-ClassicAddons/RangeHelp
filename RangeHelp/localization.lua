@@ -1,6 +1,6 @@
 
 if ( GetLocale() == "deDE" ) then
-	-- German Text (� = \195\164, � = \195\182 ,� = \195\188, � = \195\159). 
+	-- German Text (д = \195\164, ц = \195\182 ,ь = \195\188, Я = \195\159). 
 	-- Thanks to Shamane for the translation.
 	RH_RANGESPELL = { "autom. schuss", "arkaner schuss", "ersch\195\188tternder schuss", "schlangenbiss", "gezielter schuss" };
 	RH_MELEESPELL = { "zurechtstutzen", "r\195\188ckzug" };
@@ -129,6 +129,69 @@ elseif ( GetLocale() == "frFR" ) then
 	BINDING_NAME_RHSPELLKEY4 = "RangeHelp Touche 4";
 	--End French Text
 	
+elseif ( GetLocale() == "ruRU" ) then
+	-- Version : Russian ( by Maus )
+	RH_RANGESPELL = { "Автоматическая стрельба", "Чародейский выстрел", "Контузящий выстрел", "Укус змеи", "Прицельный выстрел" };
+	RH_MELEESPELL = { "Подрезать крылья", "Отрыв" };
+	
+	RHOPTION_TEXT1 = "Ближний бой";
+	RHOPTION_TEXT2 = "Дальний бой";
+	RHOPTION_TEXT3 = "Панель ближних атак";
+	RHOPTION_TEXT4 = "Панель дальних атак";
+	RHOPTION_TEXT5 = "Блокировать панель во время боя";
+	RHOPTION_TEXT6 = "Скрыть инф. окна расстояний";
+	RHOPTION_TEXT7 = "Включить RangeHelp";
+	RHOPTION_TEXT8 = "Мертвая Зона - стр. ближнего боя";
+	RHOPTION_TEXT9 = "Включить переключение панели";
+	
+	RHOPTION_XML_APPLY = "Принять";
+	RHOPTION_XML_CONFIRM = "ОК";
+	RHOPTION_XML_CANCEL = "Отмена";
+	RHOPTION_XML_CUSTOMISEUI = "Настройка ПИ";
+	RHOPTION_XML_SPELLKEYBIND = "Назначение клавиш";
+	RHOPTION_XML_ENABLECUSTSPELL = "Вкл пользов. проверку расстояния.";
+	RHOPTION_XML_DISABLECUSTSPELL = "Откл пользов. проверку расстояния.";
+	
+	RHOPTION_SPELLDISP_OK = "ОК";
+	RHOPTION_SPELLDISP_NOTFOUND = "Не найдено";
+	RHOPTION_LEVEL_NOT_MET = "Этот мод может быть использован тогда, когда ваш персонаж оснащен заклинаниями 12-го уровня и выше";
+	
+	RHOPTION_APPLY_ERR1 = "Пожалуйста, заполните все поля.";
+	RHOPTION_APPLY_ERR2 = "Неверный номер страницы. Введите значение между 1-"..NUM_ACTIONBAR_PAGES;
+	
+	RHUISETUP_TEXT1 = "Изм. размера";
+	RHUISETUP_TEXT2 = "Передвижение";
+	RHUISETUP_TEXT3 = "Размер шрифта";
+	RHUISETUP_TEXT4 = "Блокировать цвет фона";
+	RHUISETUP_TEXT5 = "Блокировать цвет границы";
+	RHUISETUP_TEXT6 = "Блокировать цвет шрифта";
+	RHUISETUP_TEXT7 = "Ссылка на цвет фона и границы";
+	RHUISETUP_TEXT8 = "Текст";
+	
+	RHUISETUP_MELEE = "Ближний бой";
+	RHUISETUP_DEADZONE = "Мертвая Зона";
+	RHUISETUP_RANGE = "Дальний бой";
+	RHUISETUP_OUTOFRANGE = "Вне зоны";
+	RHUISETUP_ALLSTATE = "Все";
+	RHUISETUP_NOTARG = "Нет цели";
+	
+	RHUISETUP_XML_RANGESTATE = "Окно расстояния";
+	RHUISETUP_XML_BACKCOLOUR = "Цвет фона";
+	RHUISETUP_XML_BORDERCOLOUR = "Цвет границы";
+	RHUISETUP_XML_FONTCOLOUR = "Цвет шрифта";
+	RHUISETUP_XML_DEFAULT = "Стандартно";
+	RHUISETUP_XML_RESETFRAMELOC = "Расположение по умолчанию";
+	
+	RHKEYSPELL_SELTEXT = "Клавиша для назначения на нее настроек";
+	RHKEYSPELL_DROPINSTR = "Выберите для назначения клавиш. Так же вы можете назначить клавиши в окне настройках (назначение клавиш) WoW.";
+	RHKEYSPELL_DRAGINSTR = "Перетащите заклинание из вашей книги заклинаний сюда.";
+	RHKEYSPELL_CHECKINSTR = "Проверить активность бафа при применении заклинания";
+	BINDING_HEADER_RANGEHELPBIND = "RangeHelp клавиши заклинаний";
+	BINDING_NAME_RHSPELLKEY1 = "RangeHelp клавиша 1";
+	BINDING_NAME_RHSPELLKEY2 = "RangeHelp клавиша 2";
+	BINDING_NAME_RHSPELLKEY3 = "RangeHelp клавиша 3";
+	BINDING_NAME_RHSPELLKEY4 = "RangeHelp клавиша 4";
+	--End Russian Text
 else -- English by default
 	RH_RANGESPELL = { "auto shot", "arcane shot", "concussive shot", "serpent sting", "aimed shot" };
 	RH_MELEESPELL = { "wing clip", "disengage" };
